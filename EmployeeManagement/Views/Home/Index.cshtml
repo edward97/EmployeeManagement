@@ -12,6 +12,10 @@
                 <h3>@employee.Name</h3>
             </div>
             <img class="card-img-top" src="~/img/img1.jpg" />
+            <div class="card-body">
+                <h5 class="card-title">@employee.Email</h5>
+                <p class="card-text">@employee.Department</p>
+            </div>
             <div class="card-footer text-center">
                 <a asp-controller="home" asp-action="details" asp-route-id="@employee.Id" class="btn btn-info">View</a>
                 <a href="#" class="btn btn-primary m-1">Edit</a>
